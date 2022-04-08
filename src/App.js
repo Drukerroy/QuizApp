@@ -19,6 +19,7 @@ const App = () => {
 
   useEffect(() => {
       getAllQuestions()
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
 
   const getAllQuestions = async() => {
