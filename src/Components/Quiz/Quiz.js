@@ -26,7 +26,7 @@ const Quiz = (props) => {
         if (questions[currentQuestion].correct_answer === optionChosen) {
             setScore(score + 1)
         }
-        
+
         let gamesPlayedArray = sortArrayByScore(gamesPlayedByUser.concat(
             [[userName, score, new Date().toLocaleTimeString()]]))
         setGamesPlayedByUser(gamesPlayedArray)
@@ -52,7 +52,8 @@ const Quiz = (props) => {
                     {questions[currentQuestion].all_questions.map((option, index) =>
                         <button key={index} className={
                             "quiz-button" + ((optionChosen !== "") && (option === questions[currentQuestion].correct_answer) ? ' correct-answer' : '')
-                            + ((optionChosen === option) && (option !== questions[currentQuestion].correct_answer) ? ' wrong-answer' : '')
+                            + ((optionChosen === option) && (option !== questions[currentQuestion].correct_answer) ? ' wrong-answer' : '') +
+                            ((optionChosen !== "") ? ' option-picked' : '')
                         } onClick={() => setOptionChosen(option)}> 
                         {decode(option)} </button>
                         )}

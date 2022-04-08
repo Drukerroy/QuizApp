@@ -29,15 +29,16 @@
 }
 
 .wrong-answer {
-    cursor: not-allowed;
-    pointer-events: none;
     background-color: rgb(232, 95, 95);
 }
 
 .correct-answer {
+    background-color: rgb(137, 213, 137);
+}
+
+.option-picked {
     cursor: not-allowed;
     pointer-events: none;
-    background-color: rgb(137, 213, 137);
 }
 
 .quiz-button:hover {
