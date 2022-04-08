@@ -1,0 +1,150 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to right, #c65126, #a8c0ff);
+  color: #fff;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: points;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.App {
+  padding-top: 30px;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #000;
+  background: linear-gradient(to right, #d8d9da 10%, #ffffff 80%);
+}
+
+.Menu, .Quiz, .EndScreen {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  background: rgba(217, 214, 228, 0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+#nextQuestion {
+  width: 200px;
+}
+
+div {
+  display: block;
+  z-index:9999;
+}
+
+.title-wrapper {
+  font-size: 72px;
+  background: -webkit-linear-gradient(rgb(120, 3, 3), rgb(91, 195, 227));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-weight: bolder;
+}
+
+h1 {
+  color: #000;
+  font-size: 6vmin;
+  line-height: 1.1;
+  font-family: 'Asul', sans-serif;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  display: block;
+}
+
+h2 {
+  color: #000;
+  font-size: 4vmin;
+  line-height: 1.1;
+  font-family: 'Work Sans', sans-serif;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  display: block;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1.25em;
+  margin-block-end: 1.25em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.particles-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1 !important; 
+  }
+
+#btn {
+  border: 1px solid #000;
+  border-radius: 50px;
+  background: rgb(247, 206, 206);
+  color: #000;
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 50%;
+  margin: 0 auto;
+  outline: none;
+  padding: 11px 0;
+  text-align: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Asul', sans-serif;
+  position: relative;
+}
+
+#btn:hover {
+    background: rgba(255, 255, 255, 0.671);
+    color: rgba(0, 0, 0, 0.749);
+    border: 1px solid #000;
+}
+
+form:invalid #btn {
+    pointer-events: none;
+    background: rgba(248, 214, 214, 0.767);
+}
+
+.text-container {
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}

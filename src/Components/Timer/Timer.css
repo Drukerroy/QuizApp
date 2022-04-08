@@ -1,0 +1,47 @@
+  .timer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.next-question-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+  
+.timer-wrapper {
+  border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 210px;
+    height: 9%;
+    position: fixed;
+    top: 60px;
+    right: 15px;
+}
+
+.remain-time-wrapper {
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  
+  .timer-text {
+    font-family: "Montserrat";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .remain-time {
+    font-size: 40px;
+  }
+  
+  
+  

@@ -1,0 +1,76 @@
+.modal-background {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #c65126, #a8c0ff);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-container {
+    width: 500px;
+    height: 500px;
+    border-radius: 12px;
+    background: linear-gradient(to right, #c65126, #a8c0ff);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    overflow: auto;
+  }
+  
+  .modal-container .modal-title {
+    font-size: 1.2em;
+    background: -webkit-linear-gradient(rgb(32, 33, 4), rgb(91, 195, 227));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    text-align: center;
+    color: black;
+  }
+  
+  .title-close-btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .title-close-btn button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .modal-container .modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    text-align: center;
+    color: black;
+  }
+  
+  .modal-container .modal-footer {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-container .modal-footer button {
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #exit-btn {
+    background-color: rgb(240, 78, 110);
+    color: black;
+  }

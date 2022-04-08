@@ -1,0 +1,19 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+
+.error-msg {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 3px 3px 3px 3px;
+  color: #D8000C;
+  background-color: #e99595;
+}
+
+.alert-hidden {
+    opacity: 0;
+    transition: all 250ms linear 2s;
+}
+
+.alert-shown {
+opacity: 1;
+transition: all 250ms linear;
+}
